@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="./image/fabicon.jpg" type="image/x-icon">
+	<link rel="shortcut icon" type="image/jpg" href="./images/fabicon.jpg">
 	<title>Shopee Demo</title>
 	<!-- Nhúng font google font -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
@@ -16,12 +16,14 @@
 	<link rel="stylesheet" href="css/grid.css">
 	<!-- style.css -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-	<header class="header">
+	<header class="header header--sticky">
 		<div class="grid wide">
-			<nav class="header__navbar">
+			<nav class="header__navbar hide-on-mobile-tablet">
 				<ul class="header__list">
 					<li class="header__list-item">
 						<a href="#" class="header__list-link header__list-link--border header__list-item--padding ">Kênh
@@ -30,11 +32,11 @@
 					<li class="header__list-item header__list-link--hover">
 						<a href="#" class="header__list-link header__list-link--border ">Tải ứng dụng</a>
 						<div class="header__qr">
-							<img src="./image/qr-code.png" alt="" class="header__qr-image">
+							<img src="./images/qr-code.png" alt="" class="header__qr-image">
 							<div class="qr__apps">
-								<span class="header__qr--google"><img src="./image/google-store.png" alt=""
+								<span class="header__qr--google"><img src="./images/google-store.png" alt=""
 										class="header__qr-image"></span>
-								<span class="header__qr--apple"><img src="./image/app-store.png" alt=""
+								<span class="header__qr--apple"><img src="./images/app-store.png" alt=""
 										class="header__qr-image"></span>
 							</div>
 						</div>
@@ -58,7 +60,7 @@
 							Thông báo</a>
 						<div class="header__notify">
 							<div class="header__notify-item">
-								<img src="./image/notify.png" alt="" class="header__notify-image">
+								<img src="./images/notify.png" alt="" class="header__notify-image">
 								<p class="header__notify-text">Đăng nhập để xem Thông báo</p>
 							</div>
 							<div class="header__notify-form">
@@ -81,6 +83,73 @@
 				</ul>
 			</nav>
 			<div class="menu__siderbar">
+				<label class="header__icon-bars" for="nav__input">
+					<i class="fal fa-bars"></i>
+				</label>
+				<input type="checkbox" hidden  id="nav__input" class="nav__input">
+				<label for="nav__input" class="navbar__overlay" ></label>
+				<nav class="navbar__mobile-wrapper">
+					<!-- <label for="nav__input" class="navbar__close"><i class="fal fa-times"></i></label> -->
+					<div class="navbar__mobile-list">
+						<a href="" class="navbar__mobile-link navbar__mobile-link--active">Tất cả sản phẩm</a>
+					</div>
+					<ul class="navbar__mobile-list">
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Ohui Thefirst Tái Sinh</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Ohui Dưỡng Trắng</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Ohui Prime Advancer</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Ohui Dưỡng Ẩm</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Ohui Chống Lão Hóa</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Ohui Make Up</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Ohui Chống Nắng</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Whoo Bichup</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Whoo Dưỡng Ẩm</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Whoo Dưỡng Trắng Trị Nám</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Whoo Make Up</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Whoo Tái Sinh</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Whoo Chống Nắng</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Whoo Spa</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Whoo Chống Lão Hóa</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Whoo Hoàn Lưu Cao</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Su:m37 Tái Sinh</a>
+						</li>
+						<li class="navbar__mobile-item">
+							<a href="" class="navbar__mobile-link">Sm:m37 Chống Lão Hóa </a>
+						</li>
+					</ul>
+				</nav>
 				<div class="header__logo">
 					<svg class="shopee-svg-icon header-with-search__shopee-logo icon-shopee-logo" viewBox="0 0 192 65">
 						<g fill-rule="evenodd">
@@ -90,13 +159,27 @@
 						</g>
 					</svg>
 				</div>
-				<form action="">
-					<div class="form__search">
+				<div class="form__search hide-on-mobile-tablet">
+					<form action="" method="POST">
 						<input type="text" class="form__search-text" name="search"
 							placeholder="Tìm sản phẩm, thương hiệu và tên shop">
 						<button type="submit" class="form__search-btn"><i class="fal fa-search"></i></button>
+					</form>
+					<div class="hot__words">
+						<div class="hot__words-list">
+							<div class="hot__words-item">
+								<a href="" class="hot__words-link">Áo khoác nữ</a>
+								<a href="" class="hot__words-link">Giày Adidas</a>
+								<a href="" class="hot__words-link">Kaki Nữ</a>
+								<a href="" class="hot__words-link">Váy Len</a>
+								<a href="" class="hot__words-link">Giày Nam</a>
+								<a href="" class="hot__words-link">Áo Nữ</a>
+								<a href="" class="hot__words-link">Áo Khoác Kaki</a>
+								<a href="" class="hot__words-link">Áo Len Nữ</a>
+							</div>
+						</div>
 					</div>
-				</form>
+				</div>
 				<div class="shopping__cart">
 					<a href="" class="shopping__cart-icon shopping__cart-icon--hover">
 						<i class="fal fa-shopping-cart"></i>
@@ -104,7 +187,7 @@
 					</a>
 					<div class="header__notify notify__notify--cart">
 						<div class="header__notify-item">
-							<img src="./image/notify-2.png" alt="" class="header__notify-image">
+							<img src="./images/notify-2.png" alt="" class="header__notify-image">
 							<p class="header__notify-text">Chưa có sản phẩm</p>
 						</div>
 					</div>
@@ -113,7 +196,7 @@
 		</div>
 	</header>
 	<main class="main">
-		<section id="search" class="search product">
+		<section id="search" class="search product hide-on-mobile-tablet">
 			<div class="grid wide">
 				<div class="row">
 					<div class="col l-2">
@@ -172,10 +255,11 @@
 		<section id="product" class="product">
 			<div class="grid wide">
 				<div class="row">
-					<div class="col l-2">
+					<div class="col l-2 hide-on-mobile-tablet">
 						<div class="category">
 							<div class="category__title">
-								<h4 class="category__title-name">Danh mục</h4>
+								<h4 class="category__title-name"><i class="fal fa-list category__title-icon"></i> Danh
+									mục</h4>
 							</div>
 							<div class="category__all-product">
 								<a href="" class="category__list-link category__list-link--active">Tất cả sản phẩm</a>
@@ -238,12 +322,12 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col l-10">
+					<div class="col l-10 ">
 						<div class="row">
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/1.png" alt="" class="">
+										<img src="./images/1.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -279,10 +363,10 @@
 									</div>
 								</a>
 							</div>
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/2.png" alt="" class="">
+										<img src="./images/2.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -318,10 +402,10 @@
 									</div>
 								</a>
 							</div>
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/3.png" alt="" class="">
+										<img src="./images/3.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -357,10 +441,10 @@
 									</div>
 								</a>
 							</div>
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/4.png" alt="" class="">
+										<img src="./images/4.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -396,10 +480,10 @@
 									</div>
 								</a>
 							</div>
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/5.png" alt="" class="">
+										<img src="./images/5.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -435,10 +519,10 @@
 									</div>
 								</a>
 							</div>
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/6.png" alt="" class="">
+										<img src="./images/6.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -474,10 +558,10 @@
 									</div>
 								</a>
 							</div>
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/7.png" alt="" class="">
+										<img src="./images/7.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -513,10 +597,10 @@
 									</div>
 								</a>
 							</div>
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/8.png" alt="" class="">
+										<img src="./images/8.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -552,10 +636,10 @@
 									</div>
 								</a>
 							</div>
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/1.png" alt="" class="">
+										<img src="./images/1.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -591,10 +675,10 @@
 									</div>
 								</a>
 							</div>
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/2.png" alt="" class="">
+										<img src="./images/2.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -630,10 +714,10 @@
 									</div>
 								</a>
 							</div>
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/3.png" alt="" class="">
+										<img src="./images/3.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -669,10 +753,10 @@
 									</div>
 								</a>
 							</div>
-							<div class="col l-3">
+							<div class="col l-3 m-4 c-6">
 								<a href="" class="product__item">
 									<div class="product__image">
-										<img src="./image/4.png" alt="" class="">
+										<img src="./images/4.png" alt="" class="">
 									</div>
 									<div class="product__content">
 										<div class="product__name">
@@ -733,107 +817,119 @@
 	<footer class="footer">
 		<div class="footer__inner">
 			<div class="grid wide">
-				<div class="footer__list">
-					<div class="footer__item">
-						<div class="footer__menu-title">Chăm sóc khách hàng</div>
-						<ul class="footer__menu-list">
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Trung tâm trợ giúp</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Phản hồi khách hàng</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Hướng dẫn mua hàng</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Trả hàng & Hoàn tiền</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Thanh toán</a>
-							</li>
-						</ul>
+				<div class="row">
+
+					<div class="col l-3 m-4 c-6">
+						<div class="footer__item">
+							<div class="footer__menu-title">Chăm sóc khách hàng</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Trung tâm trợ giúp</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Phản hồi khách hàng</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Hướng dẫn mua hàng</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Trả hàng & Hoàn tiền</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Thanh toán</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="footer__item">
-						<div class="footer__menu-title">Về chúng tôi</div>
-						<ul class="footer__menu-list">
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Giới thiệu về shopee Việt Nam</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Tuyển dụng</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Điều khoản shop</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Kênh Người bán</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Flash Sales</a>
-							</li>
-						</ul>
+					<div class="col l-3 m-4 c-6">
+						<div class="footer__item">
+							<div class="footer__menu-title">Về chúng tôi</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Giới thiệu về shopee Việt Nam</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Tuyển dụng</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Điều khoản shop</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Kênh Người bán</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Flash Sales</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="footer__item">
-						<div class="footer__menu-title">Điện thoại và phụ kiện</div>
-						<ul class="footer__menu-list">
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Điện thoại | Máy tính bảng</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Vỏ, Bao & Ốp lưng </a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Miếng dàn màn hình</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Pin sạc dự phòng</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Giá đỡ và kẹp</a>
-							</li>
-						</ul>
+					<div class="col l-3 m-4 c-6">
+						<div class="footer__item">
+							<div class="footer__menu-title">Điện thoại và phụ kiện</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Điện thoại | Máy tính bảng</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Vỏ, Bao & Ốp lưng </a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Miếng dàn màn hình</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Pin sạc dự phòng</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Giá đỡ và kẹp</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="footer__item">
-						<div class="footer__menu-title">Thiết Bị Điện Tử</div>
-						<ul class="footer__menu-list">
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Thiết bị âm thanh | Anroid tivi box</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Thiết bị đeo thông minh</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Phụ kiện tivi</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Phụ kiện & Thiết bị game</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Tai nghe</a>
-							</li>
-						</ul>
+					<div class="col l-3 m-4 c-6">
+						<div class="footer__item">
+							<div class="footer__menu-title">Thiết Bị Điện Tử</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Thiết bị âm thanh | Anroid tivi box</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Thiết bị đeo thông minh</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Phụ kiện tivi</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Phụ kiện & Thiết bị game</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Tai nghe</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="footer__item">
-						<div class="footer__menu-title">Mẹ & Bé </div>
-						<ul class="footer__menu-list">
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Đồ dùng cho bé</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Ghế, Nôi, Cũi, Xe đẩy & Địu</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Vitamin & đồ dùng cho mẹ</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Sữa trên 24 tháng tuổi</a>
-							</li>
-							<li class="footer__menu-item">
-								<a href="" class="footer__menu-link">Thực phẩm cho bé từ 6 tháng tuổi</a>
-							</li>
-						</ul>
-					</div>
+					<!-- <div class="col l-2 m-4 c-6">
+						<div class="footer__item">
+							<div class="footer__menu-title">Mẹ & Bé </div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Đồ dùng cho bé</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Ghế, Nôi, Cũi, Xe đẩy & Địu</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Vitamin & đồ dùng cho mẹ</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Sữa trên 24 tháng tuổi</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="" class="footer__menu-link">Thực phẩm cho bé từ 6 tháng tuổi</a>
+								</li>
+							</ul>
+						</div>
+					</div> -->
+
 				</div>
 			</div>
 			<div class="footer__policy">
