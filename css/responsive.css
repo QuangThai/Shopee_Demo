@@ -1,19 +1,18 @@
 /* tablet và mobile */
-
-/* tablet và mobile */
 @media (max-width: 1023px) {
+  :root {
+    --header-height: 68px;
+    --height-navbar: 0px;
+    --height-search: calc(var(--header-height) - var(--height-navbar));
+  }
   .hide-on-mobile-tablet {
     display: none;
   }
-  .header {
-    height: auto;
-  }
-
   .header__logo {
     margin: 0 auto;
   }
 
-  .navbar__mobile-wrapper  {
+  .navbar__mobile-wrapper {
     display: block;
   }
 
@@ -79,9 +78,6 @@
     display: block;
     padding-left: 14px;
   }
-  .menu__siderbar {
-    padding: 0px;
-  }
   .pagination__item {
     margin: 0 1px;
   }
@@ -99,8 +95,7 @@
     margin-bottom: 14px;
     text-align: center;
     padding: 0 5px;
-  } 
-  
+  }
   .footer__policy-list {
     display: block;
     text-align: center;

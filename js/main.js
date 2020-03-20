@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
   // sticky header
   // $(window).scroll(function (e) {
   //   var height = $(this).scrollTop();
@@ -32,8 +31,5 @@ $(document).ready(function () {
       scrollTop: 0
     }, 800);
     return false;
-
   });
-
-
 });
