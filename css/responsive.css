@@ -139,5 +139,7 @@
   .product__detail-price del {
     margin-right: 20px;
   }
-
+  .related__title {
+    padding-left: 15px;
+  }
 }

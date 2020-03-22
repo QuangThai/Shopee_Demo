@@ -36,6 +36,22 @@ $(document).ready(function () {
     ]
   });
 
+  $('.active-by-product').slick({
+    speed: 700,
+    arrows: true,
+    dots: false,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    prevArrow: '.related__product-btn--prev',
+    nextArrow: '.related__product-btn--next',
+    responsive: [
+      { breakpoint: 1024, settings: { slidesToShow: 5 } },
+      { breakpoint: 991, settings: { slidesToShow: 3 } },
+      { breakpoint: 767, settings: { slidesToShow: 3 } },
+      { breakpoint: 479, settings: { slidesToShow: 2 } }
+    ]
+  });
+
   // scroll Top
   var scrollTop = $(".back-to-top");
 
