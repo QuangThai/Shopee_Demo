@@ -79,7 +79,7 @@
   .btn__thumb-item {
     top: 33%;
   }
-  .cart-plus-minus {
+  .cart-plus-minus--width {
     width: 100px;
   }
   .name__cart {
@@ -152,7 +152,7 @@
     padding-left: 15px;
     font-size: 18px;
   }
-  .cart-plus-minus {
+  .cart-plus-minus--width {
     width: 95px;
   }
   .name__cart {
