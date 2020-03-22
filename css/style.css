@@ -1030,6 +1030,8 @@ body {
   background-color: #fafafa;
   margin-top: 15px;
   padding: 20px;
+  display: flex;
+  align-items: center;
 }
 .product__detail-price del {
   font-size: 16px ;
@@ -1133,10 +1135,18 @@ input.cart-plus-minus-box {
   cursor: pointer;
   text-transform: capitalize;
   box-sizing: border-box;
+  transition: 0.2s;
+}
+.product__detail-cart-btn:hover {
+  background-color: #fb6445;
 }
 .product__detail-cart-btn i {
   margin-right: 10px;
 }
 .product__detail-cart-btn:first-child {
   margin-right: 20px;
+}
+.disable-el {
+  pointer-events: none;
+  opacity: 0.5;
 }

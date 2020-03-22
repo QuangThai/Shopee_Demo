@@ -14,7 +14,7 @@ $(document).ready(function () {
   $('.slick__large-img').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay : true,
+    autoplay: true,
     arrows: false,
     fade: true,
     asNavFor: '.slick__thumb-img'
@@ -59,6 +59,34 @@ $(document).ready(function () {
     return false;
   });
 
-
+  // tăng giảm số lượng
+  if ($('.cart-plus-minus-box').val() == 1) {
+    $('.dec').addClass('disable-el');
+  }
+  $('.cart-plus-minus-box').on('change', function () {
+    if ($(this).val() == "" || $(this).val() == 0 || $(this).val() < 0) {
+      $(this).val('' + 1 + '');
+    } else if ($(this).val() > 1) {
+      $('.dec').removeClass('disable-el');
+    }
+  });
+  $(".qtybutton").click(function (e) {
+    var $button = $(this);
+    var oldValue = $button.parent().find("input").val();
+    console.log(oldValue);
+    if ($button.text() == "+") {
+      var newVal = parseInt(oldValue) + 1;
+    }
+    else {
+      if (oldValue > 0) {
+        var newVal = parseInt(oldValue) - 1;
+      }
+      else {
+        newVal = 0;
+      }
+    }
+    $button.parent().find("input").val(newVal);
+    $button.parent().find("input").trigger("change");
+  });
 
 });
