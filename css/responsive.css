@@ -76,6 +76,15 @@
   .slick__thumb-img img {
     height: 110px;
   }
+  .btn__thumb-item {
+    top: 33%;
+  }
+  .cart-plus-minus {
+    width: 100px;
+  }
+  .name__cart {
+    width: 30%
+  }
 }
 
 /*  mobile */
@@ -141,5 +150,19 @@
   }
   .related__title {
     padding-left: 15px;
+    font-size: 18px;
+  }
+  .cart-plus-minus {
+    width: 95px;
+  }
+  .name__cart {
+    width: 40%
+  }
+  .cart__image-info {
+    height: 50px;
+  }
+  .name__cart span {
+    -webkit-line-clamp: 3;
+    text-align: left;
   }
 }
