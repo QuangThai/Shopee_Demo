@@ -11,6 +11,9 @@
   .header__logo {
     margin: 0 auto;
   }
+  .shopping__cart {
+    padding-right: 0;
+  }
 
   .navbar__mobile-wrapper {
     display: block;
@@ -37,7 +40,7 @@
 
 /*  tablet  */
 @media (min-width: 740px) and (max-width: 1023px) {
-  .hide-on-table {
+  .hide-on-tablet{
     display: none;
   }
   .footer__item {
@@ -64,6 +67,9 @@
     width: 50%;
     padding: 10px 20px 5px 20px;
   }
+  .form__search  {
+    display: none;
+  }
 }
 
 /*  mobile */
@@ -77,6 +83,9 @@
   .header__icon-bars {
     display: block;
     padding-left: 14px;
+  }
+  .shopping__cart {
+    padding-right: 10px;
   }
   .pagination__item {
     margin: 0 1px;
