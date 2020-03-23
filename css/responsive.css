@@ -77,7 +77,10 @@
     height: 110px;
   }
   .btn__thumb-item {
-    top: 33%;
+    top: 28%;
+  }
+  .cart__image-info {
+    height: 60px;
   }
   .cart-plus-minus--width {
     width: 100px;

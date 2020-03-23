@@ -1324,7 +1324,7 @@ th {
   border: none;
   outline: 0;
   background-color: #f53d2d;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 3px;
   transition: 0.2s;
 }
@@ -1355,5 +1355,5 @@ th {
 }
 .btn__del-cart--continite {
   background-color: #666666;
-  margin-right: 15px;
+  margin-right: 30px;
 }
