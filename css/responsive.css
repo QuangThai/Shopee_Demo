@@ -165,4 +165,7 @@
     -webkit-line-clamp: 3;
     text-align: left;
   }
+  .cart__info-continute {
+    margin-bottom: 12px;
+  }
 }

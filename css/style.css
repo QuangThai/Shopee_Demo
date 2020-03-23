@@ -1180,6 +1180,7 @@ input.cart-plus-minus-box {
   padding: 10px 18px;
   background-color: #f53d2d;
   cursor: pointer;
+  border-radius: 3px;
 }
 .related__product-btn--prev {
   margin-right: 10px;
@@ -1201,7 +1202,7 @@ table {
   margin: 50px auto 10px;
 }
 table thead {
-  background-color: #fb6445;
+  background-color: #fff;
 }
 table td {
   padding: 0;
@@ -1217,7 +1218,7 @@ th {
 .table tr > th {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  color: #000;
 }
 .table tr > td,
 .table tr > th {
@@ -1242,6 +1243,7 @@ th {
   padding: 0 10px;
 }
 .btn__del-cart {
+  text-decoration: none;
   cursor: pointer;
   border: none;
   outline: 0;
@@ -1268,4 +1270,14 @@ th {
 .btn__del-cart:hover,
 .btn__del-cart--all:hover {
   background-color: #fb6445;
+}
+.cart__info-continute {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+}
+.btn__del-cart--continite {
+  background-color: #666666;
+  margin-right: 15px;
 }
