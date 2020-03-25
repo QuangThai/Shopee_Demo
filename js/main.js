@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   // sticky header
   // $(window).scroll(function (e) {
   //   var height = $(this).scrollTop();
@@ -9,6 +8,19 @@ $(document).ready(function () {
   //     $('.header').removeClass("header--sticky");
   //   }
   // });
+
+
+  // light box
+  $('.slick__large-img .slick__large-img-item').children('img').click(function () {
+    var lb_image = $(this).attr('src');
+    $('html').addClass('overflow');
+    $('body').append('<div class="light-box-page"><div class="light-box-img"><img src="' + lb_image + '"></div></div>');
+    $('body').on('click', '.light-box-page', function () {
+      $('html').removeClass('overflow');
+      $('.light-box-page').remove();
+    });
+  });
+
 
   // slick.js
   $('.slick__large-img').slick({
@@ -36,7 +48,7 @@ $(document).ready(function () {
     ]
   });
 
-  $('.active-by-product').slick({
+  $('.active__by-product').slick({
     speed: 700,
     arrows: true,
     dots: false,
