@@ -1032,9 +1032,17 @@ body {
   right: 0;
   box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
   z-index: 999;
+  animation: fadeInSticky ease-in-out 0.5s;
 }
-.header--sticky .header {
-  padding-top: 8px;
+@keyframes fadeInSticky {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 /* product detail */
