@@ -35,7 +35,7 @@ $(document).ready(function () {
   $('.slick__thumb-img').slick({
     autoplay: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: '.btn__thumb-item',
     nextArrow: '.btn__thumb-item',
@@ -43,8 +43,8 @@ $(document).ready(function () {
     focusOnSelect: true,
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 3 } },
-      { breakpoint: 991, settings: { slidesToShow: 3 } },
-      { breakpoint: 730, settings: { slidesToShow: 2 } },
+      { breakpoint: 991, settings: { slidesToShow: 4 } },
+      { breakpoint: 730, settings: { slidesToShow: 3 } },
     ]
   });
 
