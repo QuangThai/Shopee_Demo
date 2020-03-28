@@ -9,6 +9,17 @@ $(document).ready(function () {
     }
   });
 
+  $('.category__list-link').click(function (e) {
+    e.preventDefault();
+    $('.category__list-link').removeClass('category__list-link--active');
+    $(this).addClass('category__list-link--active');
+  });
+
+  $('.home__filter-btn-item').click(function (e) {
+    e.preventDefault();
+    $('.home__filter-btn-item').removeClass('home__filter-btn-item--active');
+    $(this).addClass('home__filter-btn-item--active');
+  });
 
   // light box
   $('.slick__large-img .slick__large-img-item').children('img').click(function () {

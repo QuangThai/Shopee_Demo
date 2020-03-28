@@ -2,6 +2,7 @@
   --header-height: 120px;
   --height-navbar: 34px;
   --height-search: calc(var(--header-height) - var(--height-navbar));
+  --heigth-filter : 34px;
 }
 * {
   padding: 0;
@@ -559,7 +560,7 @@ body {
   background-color: #fff;
   position: relative;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 .select__item {
   display: -webkit-box;
@@ -730,8 +731,8 @@ body {
 .home__filter-btn-item {
   text-decoration: none;
   display: block;
-  height: 36px;
-  line-height: 36px;
+  height: var(--heigth-filter);
+  line-height: var(--heigth-filter);
   min-width: 90px;
   background: #fdfdfd;
   box-shadow: inset 0 0.0625rem 0 0 rgba(0,0,0,.03);
@@ -751,7 +752,7 @@ body {
   min-width: 200px !important;
 }
 .select__item--height {
-  height: 36px;
+  height: var(--heigth-filter);
 }
 .select__item--icon {
   font-size: 13px;
@@ -772,7 +773,7 @@ body {
   text-decoration: none;
   background-color: #fdfdfd;
   min-width: 34px;
-  height: 34px;
+  height: var(--heigth-filter);
   display: inline-block;
   text-align: center;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
@@ -782,7 +783,7 @@ body {
   background-color: #ee4d2d;
 }
 .filter-btn__item i {
-  line-height: 34px;
+  line-height: var(--heigth-filter);
   font-weight: 400;
 }
 .label__pagination {
@@ -1039,6 +1040,7 @@ body {
   background-color: #f5f5f5;
   padding-top: 40px;
   padding-bottom: 60px;
+  margin-top: 20px;
 }
 .footer__policy-list {
   display: -webkit-box;
