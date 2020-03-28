@@ -251,7 +251,7 @@
 		</div>
 	</header>
 	<main class="main">
-		<section id="search" class="search product hide-on-mobile-tablet">
+		<!-- <section id="search" class="search product hide-on-mobile-tablet">
 			<div class="grid wide">
 				<div class="row">
 					<div class="col l-2">
@@ -308,7 +308,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<section id="product" class="product">
 			<div class="grid wide">
 				<div class="row">
@@ -381,7 +381,37 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col l-10 ">
+					<div class="col l-10">
+						<div class="home__filter hide-on-mobile-tablet">
+							<span class="home__filter-label">Sắp xếp theo</span>
+							<div class="home__filter-btn">
+								<a href="" class="home__filter-btn-item">Phổ biến</a>
+								<a href="" class="home__filter-btn-item home__filter-btn-item--active">Mới nhất</a>
+								<a href="" class="home__filter-btn-item">Bán chạy</a>
+								<div class="select__orderby select__orderby--min-width">
+									<div class="select__item select__item--height">
+										<span class="select__price select__price--size">Giá</span>
+										<span><i class="fal fa-chevron-down select__item--icon"></i></span>
+									</div>
+									<div class="select__item-dropdown">
+										<a href="" class="select__item-link select__item-link--two-line">
+											Giá: Thấp đến Cao
+										</a>
+										<a href="" class="select__item-link select__item-link--two-line">
+											Giá: Cao đến Thấp
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="home__filter-pagination">
+								<span class="label__pagination label__pagination--active">1/</span>
+								<span class="label__pagination">14</span>
+								<div class="filter-btn">
+									<a href="" class="filter-btn__item"><i class="far fa-angle-left"></i></a>
+									<a href="" class="filter-btn__item"><i class="far fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
 						<div class="row">
 							<div class="col l-3 m-4 c-6">
 								<a href="product-detail.html" class="product__item">
@@ -877,8 +907,7 @@
 		<div class="footer__inner">
 			<div class="grid wide">
 				<div class="row">
-
-					<div class="col l-3 m-4 c-6">
+					<div class="col l-2-4 m-4 c-6 ">
 						<div class="footer__item">
 							<div class="footer__menu-title">Chăm sóc khách hàng</div>
 							<ul class="footer__menu-list">
@@ -900,7 +929,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col l-3 m-4 c-6">
+					<div class="col l-2-4 m-4 c-6 ">
 						<div class="footer__item">
 							<div class="footer__menu-title">Về chúng tôi</div>
 							<ul class="footer__menu-list">
@@ -922,7 +951,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col l-3 m-4 c-6">
+					<div class="col l-2-4 m-4 c-6 ">
 						<div class="footer__item">
 							<div class="footer__menu-title">Điện thoại và phụ kiện</div>
 							<ul class="footer__menu-list">
@@ -944,7 +973,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col l-3 m-4 c-6">
+					<div class="col l-2-4 m-4 c-6 ">
 						<div class="footer__item">
 							<div class="footer__menu-title">Thiết Bị Điện Tử</div>
 							<ul class="footer__menu-list">
@@ -964,6 +993,20 @@
 									<a href="" class="footer__menu-link">Tai nghe</a>
 								</li>
 							</ul>
+						</div>
+					</div>
+					<div class="col l-2-4 m-4 c-6 hide-on-mobile">
+						<div class="footer__item">
+							<div class="footer__menu-title">Vào cửa hàng trên ứng dụng</div>
+							<div class="footer__store">
+								<a href="" class="footer__store-link">
+									<img src="./images/footer_qr.png" alt="" class="footer__store-link-qr">
+									<div class="footer__store-link-item">
+										<img src="./images/footer_app_store.png" alt="" class="footer__store-link-app">
+										<img src="./images/footer-gg-play.png" alt="" class="footer__store-link-app">
+									</div>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
