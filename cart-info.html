@@ -88,9 +88,9 @@
 				<label class="header__icon-bars" for="nav__input">
 					<i class="fal fa-bars"></i>
 				</label>
-				<!-- <label class="header__icon-bars" for="nav__search">
+				<label class="header__icon-bars header__icon-bars--search" for="nav__search">
 					<i class="fal fa-search"></i>
-				</label> -->
+				</label>
 				<input type="checkbox" hidden id="nav__input" class="nav__input">
 				<label for="nav__input" class="navbar__overlay"></label>
 
@@ -167,13 +167,27 @@
 						</svg>
 					</a>
 				</div>
-				<!-- <input type="checkbox" hidden  id="nav__search" class="nav__search"> -->
-				<div class="form__search hide-on-mobile-tablet ">
+				<input type="checkbox" hidden id="nav__search" class="nav__search">
+				<div class="form__search">
 					<form action="" method="POST">
-						<input type="text" class="form__search-text" name="search"
-							placeholder="Tìm sản phẩm, thương hiệu và tên shop">
+						<input type="text" class="form__search-text" name="search" placeholder="Tìm kiếm...">
 						<button type="submit" class="form__search-btn"><i class="fal fa-search"></i></button>
+						<div class="form__search-history">
+							<span class="form__search-history-label">Lịch sử tìm kiếm</span>
+							<div class="form__search-history-list">
+								<div class="form__search-history-item">
+									<a href="" class="form__search-history-link">Điện thoại</a>
+								</div>
+								<div class="form__search-history-item">
+									<a href="" class="form__search-history-link">Linh kiện máy tính</a>
+								</div>
+								<div class="form__search-history-item">
+									<a href="" class="form__search-history-link">Laptop Macbook</a>
+								</div>
+							</div>
+						</div>
 					</form>
+
 					<div class="hot__words hide-on-mobile-tablet">
 						<div class="hot__words-list">
 							<div class="hot__words-item">
@@ -254,6 +268,20 @@
 				</div>
 			</div>
 		</div>
+		<ul class="header__sort-bar">
+			<li class="header__sort-item">
+				<a href="" class="header__sort-link">Liên quan</a>
+			</li>
+			<li class="header__sort-item">
+				<a href="" class="header__sort-link">Mới nhất</a>
+			</li>
+			<li class="header__sort-item">
+				<a href="" class="header__sort-link">Bán chạy</a>
+			</li>
+			<li class="header__sort-item">
+				<a href="" class="header__sort-link">Giá</a>
+			</li>
+		</ul>
 	</header>
     <main class="main">
         <section class="product__detail">
@@ -362,12 +390,12 @@
                             </tr>
                         </tfoot>
                     </table>
-                    <div class="cart__info-continute">
-                        <a href="" class="btn__del-cart btn__del-cart--all btn__del-cart--continite"><i
-                                class="far fa-long-arrow-left"></i> Tiếp tục mua hàng</a>
-                        <a href="" class="btn__del-cart btn__del-cart--all btn__del-cart--pay"><i
-                                class="fal fa-money-bill-wave"></i> Thanh toán</a>
-                    </div>
+                </div>
+                <div class="cart__info-continute">
+                    <a href="" class="btn__del-cart btn__del-cart--all btn__del-cart--continute"><i
+                            class="far fa-long-arrow-left"></i> Tiếp tục mua hàng</a>
+                    <a href="" class="btn__del-cart btn__del-cart--all btn__del-cart--pay"><i
+                            class="fal fa-money-bill-wave"></i> Thanh toán</a>
                 </div>
             </div>
         </section>
