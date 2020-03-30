@@ -1,13 +1,13 @@
 $(document).ready(function () {
   //sticky header
-  $(window).scroll(function (e) {
-    var height = $(this).scrollTop();
-    if (height > 150 ) {
-      $('.header').addClass("header--sticky");
-    } else {
-      $('.header').removeClass("header--sticky");
-    }
-  });
+  // $(window).scroll(function (e) {
+  //   var height = $(this).scrollTop();
+  //   if (height > 1) {
+  //     $('.header').addClass("header--sticky");
+  //   } else {
+  //     $('.header').removeClass("header--sticky");
+  //   }
+  // });
 
   // active thẻ a
   $('.category__list-link').click(function (e) {

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fabicon icon -->
     <link rel="shortcut icon" type="image/jpg" href="./images/fabicon.jpg">
     <title>Shopee Demo</title>
     <!-- Nhúng font google font -->
@@ -29,18 +30,18 @@
 				<ul class="header__list">
 					<li class="header__list-item">
 						<a href="#" class="header__list-link header__list-link--border header__list-item--padding ">Kênh
-							người bán</a>
+							Người Bán</a>
 					</li>
 					<li class="header__list-item header__list-link--hover">
 						<a href="#" class="header__list-link header__list-link--border ">Tải ứng dụng</a>
 						<div class="header__qr">
-							<img src="./images/qr-code.png" alt="" class="header__qr-image">
-							<div class="qr__apps">
-								<span class="header__qr--google"><img src="./images/google-store.png" alt=""
-										class="header__qr-image"></span>
-								<span class="header__qr--apple"><img src="./images/app-store.png" alt=""
-										class="header__qr-image"></span>
-							</div>
+							<a href="" class="header__qr-link">
+								<img src="./images/qr-code.png" alt="" class="header__qr-image">
+								<div class="qr__apps">
+									<img src="./images/google-store.png" alt="" class="header__qr-image-item">
+									<img src="./images/app-store.png" alt="" class="header__qr-image-item">
+								</div>
+							</a>
 						</div>
 					</li>
 					<li class="header__list-item">
@@ -59,7 +60,7 @@
 					<li class="header__list-item header__list-link--notify">
 						<a href="#" class="header__list-link "><i
 								class="fal fa-bell header__list-icon header__list-icon--margin"></i>
-							Thông báo</a>
+							Thông Báo</a>
 						<div class="header__notify header__notify-height header__notify--cart">
 							<div class="header__notify-item">
 								<img src="./images/notify.png" alt="" class="header__notify-image">
@@ -74,13 +75,13 @@
 					<li class="header__list-item">
 						<a href="#" class="header__list-link"><i
 								class="fal fa-question-circle header__list-icon header__list-icon--margin"></i>
-							Trợ giúp</a>
+							Trợ Giúp</a>
 					</li>
 					<li class="header__list-item">
-						<a href="#" class="header__list-link header__list-link--border">Đăng ký</a>
+						<a href="#" class="header__list-link header__list-link--border">Đăng Ký</a>
 					</li>
 					<li class="header__list-item  ">
-						<a href="#" class="header__list-link header__list-item--margin">Đăng nhập</a>
+						<a href="#" class="header__list-link header__list-item--margin">Đăng Nhập</a>
 					</li>
 				</ul>
 			</nav>
@@ -170,7 +171,7 @@
 				<input type="checkbox" hidden id="nav__search" class="nav__search">
 				<div class="form__search">
 					<form action="" method="POST">
-						<input type="text" class="form__search-text" name="search" placeholder="Tìm kiếm...">
+						<input type="text" class="form__search-text" name="search" placeholder="Tìm sản phẩm, thương hiệu và tên shop...">
 						<button type="submit" class="form__search-btn"><i class="fal fa-search"></i></button>
 						<div class="form__search-history">
 							<span class="form__search-history-label">Lịch sử tìm kiếm</span>
@@ -269,7 +270,7 @@
 			</div>
 		</div>
 		<ul class="header__sort-bar">
-			<li class="header__sort-item">
+			<li class="header__sort-item header__sort-item--active ">
 				<a href="" class="header__sort-link">Liên quan</a>
 			</li>
 			<li class="header__sort-item">
