@@ -976,11 +976,11 @@ body {
   margin-top: 8px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .product__price-del {
   color: rgba(0, 0, 0, 0.54);
   font-size: 14px;
+  margin-right: 10px;
 }
 .product__price-new {
   text-decoration: none;
@@ -1088,7 +1088,7 @@ body {
 }
 .product__sale-percent {
   color: var(--primary-color);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 12px;
   line-height: 12px;
   position: relative;
@@ -1096,13 +1096,12 @@ body {
 }
 .product__sale-reduction {
   text-transform: uppercase;
-  font-weight: 400;
   line-height: 13px;
   font-size: 13px;
   color: var(--white-color);
   position: relative;
   top: -3px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* pagination */
